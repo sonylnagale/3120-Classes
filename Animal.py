@@ -6,3 +6,11 @@ class Animal:
     def talk(self):
         print("hi")
 
+    def swim(self):
+        print("blub blub")
+
+    def breach(self):
+        print("splash")
+
+    def echolocate(self):
+        prnt("ping")
