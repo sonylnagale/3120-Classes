@@ -7,6 +7,7 @@ class Animal:
     def talk(self):
         print("hi")
 
+
     def fly (self):
         print(self.__name, "can fly")
 
@@ -15,3 +16,13 @@ class Animal:
 
     def climb(self):
         print(self.__climb, "is able to climb")
+        
+    def swim(self):
+        print("blub blub")
+
+    def breach(self):
+        print("splash")
+
+    def echolocate(self):
+        prnt("ping")
+
