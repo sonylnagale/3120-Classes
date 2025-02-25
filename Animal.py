@@ -7,9 +7,6 @@ class Animal:
         self._favorite_animal = favorite_animal
         print(f"Hello, I am {self._name}")
 
-    def talk(self):
-        print("Hi")
-
     def eat(self):
         print(f"{self._name} has {self._eye_color} eyes and eats {self._food}, yum yum!")
         print(f"Speed before eating: {self._speed}")
