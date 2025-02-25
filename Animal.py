@@ -1,33 +1,33 @@
 class Animal:
-    def __init__(self, name, eye, food, speed=5, favorite_animal=""):
-        self._name = name
-        self._eye_color = eye
-        self._food = food
-        self._speed = speed
-        self._favorite_animal = favorite_animal
-        print(f"Hello, I am {self._name}")
+    def __init__(self, name, species="Unknown", age=0, sound="..."):
+        self.__name = name
+        self.__species = species
+        self.__age = age
+        self.__sound = sound
+        print(f"Hello, I am {self.__name}, a {self.__species}.")
 
     def talk(self):
-        print("Hi there! I am an animal")
+        print(f"{self.__name} says: {self.__sound}")
 
-    def eat(self):
-        print(f"{self._name} has {self._eye_color} eyes and eats {self._food}, yum yum!")
-        print(f"Speed before eating: {self._speed}")
-        self._speed += 1  # Increase speed after eating
-        print(f"Speed after eating: {self._speed}")
+    def get_species(self):
+        return self.__species
 
-    def likes(self):
-        print(f"{self._name} likes {self._favorite_animal}!")
+    def set_species(self, species):
+        self.__species = species
 
-    def eye_color(self):
-        return self._eye_color
+    def set_sound(self, sound):
+        self.__sound = sound
 
-    def get_speed(self):
-        return self._speed
+    def get_age(self):
+        return self.__age
 
-    def set_speed(self, speed):
-        if speed >= 0:
-            self._speed = speed
+    def set_age(self, age):
+        if age >= 0:
+            self.__age = age
         else:
-            print("Speed cannot be negative.")
+            print("Age cannot be negative.")
+
+    def describe(self):
+        print(f"{self.__name} is a {self.__age}-year-old {self.__species} that says '{self.__sound}'.")
+
 
