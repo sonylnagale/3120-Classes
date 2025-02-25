@@ -1,6 +1,26 @@
 #class of Animal
 class Animal:
 
+
+    def __init__(self, name, action, age, toy, sleep):
+        self.__name = name 
+        self.__action = action
+        self.__age = age 
+        self.__toy = toy
+        self.__sleep = sleep
+        print("hello, I am", self.__name)
+
+    def action(self):
+        print(f"I'm {self.__action} in the water")
+    def eat(self, food):
+        print(f"I like eating {food}")
+    def age(self):
+        print(f"I'm {self.__age} years old")
+    def toy(self):
+        print(f"I enjoy playing with a {self.__toy}; it's my favorite toy")
+    def sleep(self):
+        print(f"Did you know us otters hold hands while we {self.__sleep} so we don't drift apart?")
+
     def __init__(self, name, animal_type, gender, food, habitat, classes, age=0): 
         self.__name = name
         self.__animal_type = animal_type
@@ -25,7 +45,7 @@ class Animal:
     #function of animal's age
     def age(self):
         print(f"I am {self.__age} years old")
-        
+
     def __init__(self, name, eye, food, speed=5, favorite_animal=""):
         self._name = name
         self._eye_color = eye
@@ -58,9 +78,7 @@ class Animal:
         else:
             print("Speed cannot be negative.")
 
-    #function of the food that animal eat
-    def food(self):
-        print(f"I eat {self.__food}")
+
 
     #function of habitat that the animal lives in
     def habitat(self):
