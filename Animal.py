@@ -8,7 +8,7 @@ class Animal:
         print(f"Hello, I am {self._name}")
 
     def talk(self):
-        print("Hi")
+        print("Hi there! I am an animal")
 
     def eat(self):
         print(f"{self._name} has {self._eye_color} eyes and eats {self._food}, yum yum!")
