@@ -21,6 +21,7 @@ class Animal:
     def sleep(self):
         print(f"Did you know us otters hold hands while we {self.__sleep} so we don't drift apart?")
 
+
     def __init__(self, name, animal_type, gender, food, habitat, classes, age=0): 
         self.__name = name
         self.__animal_type = animal_type
